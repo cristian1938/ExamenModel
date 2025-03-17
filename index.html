@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckPoint Expert Aggity</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CheckPoint Expert Aggity</h1>
+        <div>
+            <label for="quantity-input">Number of Questions:</label>
+            <input type="number" id="quantity-input" value="10" min="1" max="300">
+            <button id="load-questions-button">Load Questions</button>
+        </div>
+        <button id="toggle-view-button" class="toggle-view-button">Toggle View</button>
+        <div id="quiz">
+            <div id="question-count"></div>
+            <div id="question" class="question"></div>
+            <div id="options" class="options"></div>
+            <div class="buttons">
+                <button id="prev-button">Previous</button>
+                <button id="next-button">Next</button>
+            </div>
+        </div>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
